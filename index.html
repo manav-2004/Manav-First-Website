@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone</title>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+    <!-- bootstrap and css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styling.css">
+
+
+</head>
+<body>
+
+    <nav class="navbar_">
+        <div class="logo">
+            <img src="./logo.png" alt="">
+            <p>FitZone</p>
+        </div>
+        <ul class="navitems">
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Trainers</a></li>
+            <li class="items"><a href="./foodCourt.html" target="_blank">Food<span id = "underscore">_</span>Court</a></li>
+            <li class="items"><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <section class="back_image">
+    </section>
+    <div class="quote">
+        <p id = "quote-up">"Your body can do it!</p>
+        <p id = "quote-down">Its time to convince your mind"</p>
+    </div>
+
+    <span id="plan-heading">Plans</span>
+    <section class="parent-plans">
+        <div class = "plan" id="plan1">
+            <div class="plan-type">Basic <hr></div>
+            <div class="plan-price">$25</div>
+            <div class="plan-duration">(Monthly)</div>
+        </div>
+        <div class = "plan" id="plan2">
+            <div class="plan-type">Pro</div>
+            <div class="plan-price">$135</div>
+            <div class="plan-duration">(Half-Yearly)</div>
+        </div>
+        <div class = "plan" id="plan3">
+            <div class="plan-type">Enterprise</div>
+            <div class="plan-price">$250</div>
+            <div class="plan-duration">(Yearly)</div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel-parent">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+
+
+                  <div class="carousel-item active">
+                    <img src="./carousel/carousel1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./carousel/carousel2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./carousel/carousel5.jpg" class="d-block w-100" alt="...">
+                  </div>                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+    </section>
+    <div class="form-heading">Join now , and become a part of best Gym in Delhi</div>
+    <section class="form">
+        <form>
+
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="phone" placeholder="Contact No."><br>
+                <input type="text" id="age" placeholder="Age"><br>
+
+                <input type="radio" id="male" name="gender">
+                <label for="male" id="male_label" >Male</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female" id="female_label" >Female</label><br>
+
+                <textarea name="address" id="address" placeholder="Address" ></textarea><br>
+
+                <span class="form-plan">Plans</span><br>
+
+                <input type="radio" id = "basic" name = "plans">
+                <label for="basic" id = "basic_label" >Basic</label><br>
+                <input type="radio" id = "pro" name = "plans">
+                <label for="pro" id = "pro_label" >Pro</label><br>
+                <input type="radio" id = "enterprise" name = "plans">
+                <label for="enterprise" id = "enterprise_label" >Enterprise</label><br>
+
+                <select name="shift" id="shift">
+                    <option value="shift" id = "shift" selected disabled hidden>Shift</option>
+                    <option value="morning" id = "morning">Morning</option>
+                    <option value="afternoon" id = "afternoon">Afternoon</option>
+                    <option value="evening" id = "evening">Evening</option>
+                </select><br>
+
+                <label for="joiningDate"  id = "date_label" >Joining Date : </label>
+                <input type="date" id="date"><br>
+                <input type="submit" id = "submit" value="Join">
+            
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="foot-parent">
+            <div id="foot_name">FIT ZONE</div>
+            <div id="contact">Contact Us <span>+91 8977662211 +91 8977662212</span></div>
+            <div id="mail">Mail Us <span>fitzone69@gmail.com</span></div>
+        </div>
+        <div id ="copyright">Copyright © 2023. Fit Zone Bisexual Gym. All rights resrved</div> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
